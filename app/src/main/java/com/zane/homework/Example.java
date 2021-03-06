@@ -5,7 +5,6 @@ import com.zane.homework.property.Direction;
 import com.zane.homework.property.Plateau;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -14,6 +13,7 @@ public class Example {
     public static void main(String[] args) {
         readRun("input.txt");
     }
+
 
     private static void readRun(String fileName) {
         try {
@@ -31,7 +31,6 @@ public class Example {
             String coordinateStr;
             int xCoordinate, yCoordinate;
             while ((coordinateStr = reader.readLine()) != null) {
-                System.out.println(new File("../../../../input.txt").getAbsolutePath());
                 String[] coordinates = coordinateStr.split(" ");
                 xCoordinate = Integer.parseInt(coordinates[0]);
                 yCoordinate = Integer.parseInt(coordinates[1]);
